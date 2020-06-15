@@ -1,0 +1,25 @@
+<!-- <p>index works!</p> -->
+<a href="#" routerLink="/post/create/" class="btn btn-success">Agregar Nuevo</a>
+<div align=center class="container">
+    <h1>ABM de los productos</h1>
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Detalle</th>
+            <th width="220px">Action</th>
+        </tr>
+        <tr *ngFor="let post of posts">
+            <td>{{ post.id }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.precio }}</td>
+            <td>{{ post.body }}</td>
+            <td>
+                <a href="#" [routerLink]="['/post/', post.id, 'view']" class="btn btn-info">View</a>
+                <a href="#" [routerLink]="['/post/', post.id, 'edit']" class="btn btn-primary">Edit</a>
+                <button type="button" (click)="deletePost(post.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>

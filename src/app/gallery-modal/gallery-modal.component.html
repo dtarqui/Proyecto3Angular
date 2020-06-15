@@ -1,0 +1,23 @@
+<mat-dialog-content (swipeleft)="changeImg(1)" (swiperight)="changeImg(-1)">
+    <div fxLayout="row" fxLayoutAlign="center center" align=center>
+        <button fxHide fxShow.gt-sm *ngIf="!image.first" mat-button (click)="changeImg(-1)">
+            <mat-icon>chevron_left</mat-icon>
+        </button>
+        ---
+        <button fxHide fxShow.gt-sm *ngIf="!image.last" mat-button (click)="changeImg(1)">
+            <mat-icon>chevron_right</mat-icon>
+        </button>
+    </div>
+    <br>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <img class="mat-dialog-content-img" [src]="image.src" [alt]="image.alt">
+        <div align=center>
+            <br>
+            <h3>
+                Producto:{{image.nombre}}<br>
+                Precio:{{image.precio}} Bs.
+            </h3>
+            <button (click)="buy()">Comprar</button>
+        </div>
+    </div>
+</mat-dialog-content>

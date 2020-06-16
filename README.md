@@ -27,5 +27,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## ----
+## Dependencies
 
+[Angular_Material](https://material.angular.io/guide/getting-started)
+ng add @angular/material
+
+[Angular_Flex-Layout] (https://www.npmjs.com/package/@angular/flex-layout)
+npm i @angular/flex-layout
+
+Hammerjs 
+npm install --save hammerjs
+
+[Bootstrap](https://morioh.com/p/008bb400c3ff)
+npm install bootstrap --save
+
+For more [here](https://www.npmjs.com/)

@@ -29,16 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Dependencies
 
-[Angular_Material](https://material.angular.io/guide/getting-started)
-ng add @angular/material
+[Angular_Material](https://material.angular.io/guide/getting-started) - **ng add @angular/material**
 
-[Angular_Flex-Layout] (https://www.npmjs.com/package/@angular/flex-layout)
-npm i @angular/flex-layout
+[Angular_Flex-Layout](https://www.npmjs.com/package/@angular/flex-layout) - **npm i @angular/flex-layout**
 
-Hammerjs 
-npm install --save hammerjs
+Hammerjs - **npm install --save hammerjs**
 
-[Bootstrap](https://morioh.com/p/008bb400c3ff)
-npm install bootstrap --save
+[Bootstrap](https://morioh.com/p/008bb400c3ff) - **npm install bootstrap --save**
 
 For more [here](https://www.npmjs.com/)
